@@ -12,7 +12,7 @@
         
         <div id="myApp">
             <ol>
-                <li v-for="email in emailGenerate">{{email}}</li>
+                <li v-for="email in emailGenerate" v-if="emailGenerate.length === emailDaGenerare">{{email}}</li>
             </ol>
         </div>
 
